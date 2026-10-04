@@ -1,0 +1,5 @@
+{
+  "damage": [],
+  "adjacency": [],
+  "notes": "See docs/INPUTS.md for supported annotations; empty means not assessed, not damage-free."
+}

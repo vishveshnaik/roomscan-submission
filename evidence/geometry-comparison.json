@@ -1,0 +1,792 @@
+{
+  "baseline_commit": "92d4f63",
+  "geometry_revision": 2,
+  "physical_gate_status": "not_evaluated",
+  "captures": {
+    "original": {
+      "before": {
+        "rooms": 3,
+        "structural_planes": 12,
+        "opening_candidates": 2,
+        "area_m2": 22.405,
+        "physical_boundary_lengths": 60,
+        "unknown_physical_boundaries": 0,
+        "ray_count": null,
+        "wall_clipped_rays": null,
+        "observed_area_m2": null,
+        "inferred_area_m2": null,
+        "local_height_candidates_m": [
+          null,
+          null,
+          null
+        ]
+      },
+      "after": {
+        "rooms": 3,
+        "structural_planes": 7,
+        "opening_candidates": 0,
+        "area_m2": 23.645,
+        "physical_boundary_lengths": 9,
+        "unknown_physical_boundaries": 182,
+        "ray_count": 17699,
+        "wall_clipped_rays": 2315,
+        "observed_area_m2": 21.822500000000005,
+        "inferred_area_m2": 1.8225000000000005,
+        "local_height_candidates_m": [
+          null,
+          null,
+          null
+        ]
+      },
+      "same_frame_geometric_correspondence": {
+        "rooms": [
+          {
+            "source_room": "c00a170fe1-space-1",
+            "target_room": "c00a170fe1-g2-space-1",
+            "polygon_iou": 0.9299295774647888,
+            "area_difference_m2": -0.1388000000000007,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c00a170fe1-space-2",
+            "target_room": "c00a170fe1-g2-space-2",
+            "polygon_iou": 0.9017857142857143,
+            "area_difference_m2": -0.5487000000000002,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c00a170fe1-space-3",
+            "target_room": "c00a170fe1-g2-space-3",
+            "polygon_iou": 0.9275290625772941,
+            "area_difference_m2": -0.5525000000000002,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          }
+        ],
+        "walls": [
+          {
+            "source_wall": "c00a170fe1-plane-1",
+            "target_wall": "c00a170fe1-g2-plane-1",
+            "plane_offset_m": 0.0006898531748727801,
+            "support_overlap_fraction": 0.9999353881765382,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-2",
+            "target_wall": "c00a170fe1-g2-plane-2",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 0.9999999999999999,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-4",
+            "target_wall": "c00a170fe1-g2-plane-3",
+            "plane_offset_m": 0.004177444620878656,
+            "support_overlap_fraction": 0.9999176006608725,
+            "observed_length_difference_m": 1.35,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-5",
+            "target_wall": "c00a170fe1-g2-plane-4",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-6",
+            "target_wall": "c00a170fe1-g2-plane-5",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 0.9999999999999998,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-8",
+            "target_wall": "c00a170fe1-g2-plane-6",
+            "plane_offset_m": 3.510058695481086e-05,
+            "support_overlap_fraction": 0.9999707591394322,
+            "observed_length_difference_m": 0.04999999999999982,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c00a170fe1-plane-9",
+            "target_wall": "c00a170fe1-g2-plane-7",
+            "plane_offset_m": 0.10106327849212672,
+            "support_overlap_fraction": 0.7160295817752049,
+            "observed_length_difference_m": 0.09999999999999998,
+            "status": "coverage_comparison_not_accuracy"
+          }
+        ],
+        "unmatched_source_walls": 5,
+        "unmatched_target_walls": 0
+      },
+      "same_revision_drift_ablation": {
+        "enabled": {
+          "rooms": 3,
+          "structural_planes": 7,
+          "opening_candidates": 0,
+          "area_m2": 23.645,
+          "physical_boundary_lengths": 9,
+          "unknown_physical_boundaries": 182,
+          "ray_count": 17699,
+          "wall_clipped_rays": 2315,
+          "observed_area_m2": 21.822500000000005,
+          "inferred_area_m2": 1.8225000000000005,
+          "local_height_candidates_m": [
+            null,
+            null,
+            null
+          ]
+        },
+        "disabled": {
+          "rooms": 2,
+          "structural_planes": 4,
+          "opening_candidates": 0,
+          "area_m2": 23.98,
+          "physical_boundary_lengths": 6,
+          "unknown_physical_boundaries": 161,
+          "ray_count": 17702,
+          "wall_clipped_rays": 1627,
+          "observed_area_m2": 22.070000000000004,
+          "inferred_area_m2": 1.9100000000000004,
+          "local_height_candidates_m": [
+            null,
+            null
+          ]
+        },
+        "region_count_change": 1,
+        "candidate_area_change_m2": -0.335,
+        "wall_clipped_ray_change": 688
+      }
+    },
+    "floor-only": {
+      "before": {
+        "rooms": 6,
+        "structural_planes": 23,
+        "opening_candidates": 8,
+        "area_m2": 64.7013,
+        "physical_boundary_lengths": 147,
+        "unknown_physical_boundaries": 0,
+        "ray_count": null,
+        "wall_clipped_rays": null,
+        "observed_area_m2": null,
+        "inferred_area_m2": null,
+        "local_height_candidates_m": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "after": {
+        "rooms": 4,
+        "structural_planes": 18,
+        "opening_candidates": 0,
+        "area_m2": 66.67,
+        "physical_boundary_lengths": 22,
+        "unknown_physical_boundaries": 334,
+        "ray_count": 50241,
+        "wall_clipped_rays": 5820,
+        "observed_area_m2": 61.360000000000014,
+        "inferred_area_m2": 5.310000000000001,
+        "local_height_candidates_m": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "same_frame_geometric_correspondence": {
+        "rooms": [
+          {
+            "source_room": "1a8384c3f6-space-3",
+            "target_room": "1a8384c3f6-g2-space-1",
+            "polygon_iou": 0.47427055702917764,
+            "area_difference_m2": -16.3112,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "1a8384c3f6-space-4",
+            "target_room": "1a8384c3f6-g2-space-2",
+            "polygon_iou": 0.9405147172137464,
+            "area_difference_m2": -0.49120000000000097,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "1a8384c3f6-space-5",
+            "target_room": "1a8384c3f6-g2-space-3",
+            "polygon_iou": 0.9249463902787706,
+            "area_difference_m2": -0.14370000000000083,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "1a8384c3f6-space-6",
+            "target_room": "1a8384c3f6-g2-space-4",
+            "polygon_iou": 0.9388038942976356,
+            "area_difference_m2": -0.4112999999999998,
+            "ceiling_difference_m": null,
+            "status": "geometric_correspondence_candidate"
+          }
+        ],
+        "walls": [
+          {
+            "source_wall": "1a8384c3f6-plane-1",
+            "target_wall": "1a8384c3f6-g2-plane-1",
+            "plane_offset_m": 0.0014457520768468672,
+            "support_overlap_fraction": 0.9999999966260894,
+            "observed_length_difference_m": 0.25,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-2",
+            "target_wall": "1a8384c3f6-g2-plane-2",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-3",
+            "target_wall": "1a8384c3f6-g2-plane-3",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-5",
+            "target_wall": "1a8384c3f6-g2-plane-4",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-6",
+            "target_wall": "1a8384c3f6-g2-plane-5",
+            "plane_offset_m": 0.00036742013572490725,
+            "support_overlap_fraction": 0.999959391407996,
+            "observed_length_difference_m": 0.10000000000000009,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-7",
+            "target_wall": "1a8384c3f6-g2-plane-6",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-8",
+            "target_wall": "1a8384c3f6-g2-plane-7",
+            "plane_offset_m": 0.0007045453043596139,
+            "support_overlap_fraction": 0.99999999924918,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-9",
+            "target_wall": "1a8384c3f6-g2-plane-8",
+            "plane_offset_m": 6.583326908322874e-05,
+            "support_overlap_fraction": 0.999996849627868,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-12",
+            "target_wall": "1a8384c3f6-g2-plane-9",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-14",
+            "target_wall": "1a8384c3f6-g2-plane-10",
+            "plane_offset_m": 0.002636657471745848,
+            "support_overlap_fraction": 0.999947663562384,
+            "observed_length_difference_m": 0.19999999999999996,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-15",
+            "target_wall": "1a8384c3f6-g2-plane-11",
+            "plane_offset_m": 9.983981932320821e-05,
+            "support_overlap_fraction": 0.9999999990906623,
+            "observed_length_difference_m": 0.04999999999999993,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-17",
+            "target_wall": "1a8384c3f6-g2-plane-12",
+            "plane_offset_m": 9.983911446344197e-05,
+            "support_overlap_fraction": 0.9999999999324465,
+            "observed_length_difference_m": 0.10000000000000009,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-18",
+            "target_wall": "1a8384c3f6-g2-plane-14",
+            "plane_offset_m": 0.005090929563590446,
+            "support_overlap_fraction": 0.9999955087249678,
+            "observed_length_difference_m": 1.4000000000000004,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-19",
+            "target_wall": "1a8384c3f6-g2-plane-15",
+            "plane_offset_m": 0.00013444847502443007,
+            "support_overlap_fraction": 0.9999999948705993,
+            "observed_length_difference_m": 0.10000000000000009,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-20",
+            "target_wall": "1a8384c3f6-g2-plane-16",
+            "plane_offset_m": 0.00014110077145642079,
+            "support_overlap_fraction": 0.9999999976286328,
+            "observed_length_difference_m": 0.19999999999999996,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-22",
+            "target_wall": "1a8384c3f6-g2-plane-17",
+            "plane_offset_m": 0.00036994504722360176,
+            "support_overlap_fraction": 0.9999622617016745,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "1a8384c3f6-plane-23",
+            "target_wall": "1a8384c3f6-g2-plane-18",
+            "plane_offset_m": 0.001631621797862106,
+            "support_overlap_fraction": 0.9999999997396217,
+            "observed_length_difference_m": 0.5,
+            "status": "coverage_comparison_not_accuracy"
+          }
+        ],
+        "unmatched_source_walls": 6,
+        "unmatched_target_walls": 1
+      },
+      "same_revision_drift_ablation": {
+        "enabled": {
+          "rooms": 4,
+          "structural_planes": 18,
+          "opening_candidates": 0,
+          "area_m2": 66.67,
+          "physical_boundary_lengths": 22,
+          "unknown_physical_boundaries": 334,
+          "ray_count": 50241,
+          "wall_clipped_rays": 5820,
+          "observed_area_m2": 61.360000000000014,
+          "inferred_area_m2": 5.310000000000001,
+          "local_height_candidates_m": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "disabled": {
+          "rooms": 4,
+          "structural_planes": 14,
+          "opening_candidates": 0,
+          "area_m2": 66.745,
+          "physical_boundary_lengths": 24,
+          "unknown_physical_boundaries": 364,
+          "ray_count": 50211,
+          "wall_clipped_rays": 3868,
+          "observed_area_m2": 61.91000000000001,
+          "inferred_area_m2": 4.835000000000001,
+          "local_height_candidates_m": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "region_count_change": 0,
+        "candidate_area_change_m2": -0.075,
+        "wall_clipped_ray_change": 1952
+      }
+    },
+    "with-ceiling": {
+      "before": {
+        "rooms": 5,
+        "structural_planes": 27,
+        "opening_candidates": 6,
+        "area_m2": 68.4287,
+        "physical_boundary_lengths": 131,
+        "unknown_physical_boundaries": 0,
+        "ray_count": null,
+        "wall_clipped_rays": null,
+        "observed_area_m2": null,
+        "inferred_area_m2": null,
+        "local_height_candidates_m": [
+          2.5551,
+          2.59,
+          2.4122,
+          2.2869,
+          2.3796
+        ]
+      },
+      "after": {
+        "rooms": 5,
+        "structural_planes": 18,
+        "opening_candidates": 0,
+        "area_m2": 71.385,
+        "physical_boundary_lengths": 27,
+        "unknown_physical_boundaries": 374,
+        "ray_count": 66071,
+        "wall_clipped_rays": 5599,
+        "observed_area_m2": 66.60000000000001,
+        "inferred_area_m2": 4.785000000000001,
+        "local_height_candidates_m": [
+          2.9488,
+          3.0672,
+          3.0228,
+          2.2893,
+          2.3449
+        ]
+      },
+      "same_frame_geometric_correspondence": {
+        "rooms": [
+          {
+            "source_room": "c7d28f72c6-space-1",
+            "target_room": "c7d28f72c6-g2-space-1",
+            "polygon_iou": 0.9365104248314783,
+            "area_difference_m2": -0.3200000000000003,
+            "ceiling_difference_m": -0.39369999999999994,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c7d28f72c6-space-2",
+            "target_room": "c7d28f72c6-g2-space-2",
+            "polygon_iou": 0.898287758752875,
+            "area_difference_m2": -0.7788000000000004,
+            "ceiling_difference_m": -0.4772000000000003,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c7d28f72c6-space-3",
+            "target_room": "c7d28f72c6-g2-space-3",
+            "polygon_iou": 0.8988014067322184,
+            "area_difference_m2": -2.681199999999997,
+            "ceiling_difference_m": -0.6106000000000003,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c7d28f72c6-space-4",
+            "target_room": "c7d28f72c6-g2-space-4",
+            "polygon_iou": 0.8637922586967173,
+            "area_difference_m2": -0.5875000000000004,
+            "ceiling_difference_m": -0.0023999999999997357,
+            "status": "geometric_correspondence_candidate"
+          },
+          {
+            "source_room": "c7d28f72c6-space-5",
+            "target_room": "c7d28f72c6-g2-space-5",
+            "polygon_iou": 0.78627553693033,
+            "area_difference_m2": 1.4112,
+            "ceiling_difference_m": 0.03469999999999995,
+            "status": "geometric_correspondence_candidate"
+          }
+        ],
+        "walls": [
+          {
+            "source_wall": "c7d28f72c6-plane-1",
+            "target_wall": "c7d28f72c6-g2-plane-1",
+            "plane_offset_m": 0.0007373579336433095,
+            "support_overlap_fraction": 0.9999999987198852,
+            "observed_length_difference_m": 1.4500000000000002,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-2",
+            "target_wall": "c7d28f72c6-g2-plane-2",
+            "plane_offset_m": 0.001466814055979978,
+            "support_overlap_fraction": 0.9999999860981588,
+            "observed_length_difference_m": 0.25,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-4",
+            "target_wall": "c7d28f72c6-g2-plane-3",
+            "plane_offset_m": 0.0005386466144559898,
+            "support_overlap_fraction": 0.9999999986982492,
+            "observed_length_difference_m": 0.1499999999999999,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-5",
+            "target_wall": "c7d28f72c6-g2-plane-4",
+            "plane_offset_m": 0.0008010882929120784,
+            "support_overlap_fraction": 0.9999999930786897,
+            "observed_length_difference_m": 0.30000000000000004,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-6",
+            "target_wall": "c7d28f72c6-g2-plane-5",
+            "plane_offset_m": 0.0023377476346854997,
+            "support_overlap_fraction": 0.9999999998930769,
+            "observed_length_difference_m": 0.10000000000000009,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-7",
+            "target_wall": "c7d28f72c6-g2-plane-6",
+            "plane_offset_m": 0.00022355902008497678,
+            "support_overlap_fraction": 0.9999970179743238,
+            "observed_length_difference_m": 0.25,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-8",
+            "target_wall": "c7d28f72c6-g2-plane-7",
+            "plane_offset_m": 0.0037585664923117526,
+            "support_overlap_fraction": 0.9999295346360654,
+            "observed_length_difference_m": 0.25,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-9",
+            "target_wall": "c7d28f72c6-g2-plane-8",
+            "plane_offset_m": 0.002208252130503102,
+            "support_overlap_fraction": 0.9999999999999839,
+            "observed_length_difference_m": 1.7499999999999998,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-11",
+            "target_wall": "c7d28f72c6-g2-plane-9",
+            "plane_offset_m": 0.0,
+            "support_overlap_fraction": 1.0,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-12",
+            "target_wall": "c7d28f72c6-g2-plane-10",
+            "plane_offset_m": 2.056949479666524e-05,
+            "support_overlap_fraction": 0.9875222430423701,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-13",
+            "target_wall": "c7d28f72c6-g2-plane-11",
+            "plane_offset_m": 8.849818473992722e-05,
+            "support_overlap_fraction": 0.9999379131930786,
+            "observed_length_difference_m": 0.0,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-14",
+            "target_wall": "c7d28f72c6-g2-plane-12",
+            "plane_offset_m": 0.00585909530903474,
+            "support_overlap_fraction": 0.9999999999918981,
+            "observed_length_difference_m": 0.5499999999999998,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-15",
+            "target_wall": "c7d28f72c6-g2-plane-13",
+            "plane_offset_m": 0.0007364426516865176,
+            "support_overlap_fraction": 0.996291637745331,
+            "observed_length_difference_m": 0.04999999999999993,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-17",
+            "target_wall": "c7d28f72c6-g2-plane-14",
+            "plane_offset_m": 0.0005772629905486555,
+            "support_overlap_fraction": 0.9999918510438419,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-20",
+            "target_wall": "c7d28f72c6-g2-plane-15",
+            "plane_offset_m": 0.002504610913825981,
+            "support_overlap_fraction": 0.9999913484969878,
+            "observed_length_difference_m": 0.050000000000000044,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-24",
+            "target_wall": "c7d28f72c6-g2-plane-16",
+            "plane_offset_m": 0.0040653810400569645,
+            "support_overlap_fraction": 0.9998889969114438,
+            "observed_length_difference_m": 0.44999999999999996,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-26",
+            "target_wall": "c7d28f72c6-g2-plane-17",
+            "plane_offset_m": 0.00022355859713369162,
+            "support_overlap_fraction": 0.9999999928258452,
+            "observed_length_difference_m": 0.04999999999999993,
+            "status": "coverage_comparison_not_accuracy"
+          },
+          {
+            "source_wall": "c7d28f72c6-plane-27",
+            "target_wall": "c7d28f72c6-g2-plane-18",
+            "plane_offset_m": 0.006536459091992353,
+            "support_overlap_fraction": 0.9999999988761271,
+            "observed_length_difference_m": 0.9000000000000001,
+            "status": "coverage_comparison_not_accuracy"
+          }
+        ],
+        "unmatched_source_walls": 9,
+        "unmatched_target_walls": 0
+      },
+      "same_revision_drift_ablation": {
+        "enabled": {
+          "rooms": 5,
+          "structural_planes": 18,
+          "opening_candidates": 0,
+          "area_m2": 71.385,
+          "physical_boundary_lengths": 27,
+          "unknown_physical_boundaries": 374,
+          "ray_count": 66071,
+          "wall_clipped_rays": 5599,
+          "observed_area_m2": 66.60000000000001,
+          "inferred_area_m2": 4.785000000000001,
+          "local_height_candidates_m": [
+            2.9488,
+            3.0672,
+            3.0228,
+            2.2893,
+            2.3449
+          ]
+        },
+        "disabled": {
+          "rooms": 4,
+          "structural_planes": 12,
+          "opening_candidates": 0,
+          "area_m2": 71.975,
+          "physical_boundary_lengths": 20,
+          "unknown_physical_boundaries": 319,
+          "ray_count": 66175,
+          "wall_clipped_rays": 3154,
+          "observed_area_m2": 67.65250000000002,
+          "inferred_area_m2": 4.322500000000001,
+          "local_height_candidates_m": [
+            2.9527,
+            3.0806,
+            2.4428,
+            2.3469
+          ]
+        },
+        "region_count_change": 1,
+        "candidate_area_change_m2": -0.59,
+        "wall_clipped_ray_change": 2445
+      }
+    }
+  },
+  "controlled_regressions": {
+    "before": {
+      "kind": "controlled_software_regression",
+      "physical_gate_status": "not_evaluated",
+      "implementation": "tmp/topology-baseline/roomscan/structure.py",
+      "cases": [
+        {
+          "case": "unsupported_gap",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 1,
+          "pass": false
+        },
+        {
+          "case": "pose_jump",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 1,
+          "pass": false
+        },
+        {
+          "case": "painted_gap",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 1,
+          "pass": false
+        },
+        {
+          "case": "short_furniture_face",
+          "expected_wall_candidates": 0,
+          "actual_wall_candidates": 1,
+          "pass": false
+        },
+        {
+          "case": "two_rooms_one_door",
+          "expected_rooms": 2,
+          "actual_rooms": 2,
+          "expected_openings": 1,
+          "actual_openings": 2,
+          "pass": false
+        }
+      ],
+      "passed": 0,
+      "total": 5
+    },
+    "after": {
+      "kind": "controlled_software_regression",
+      "physical_gate_status": "not_evaluated",
+      "implementation": "roomscan/structure.py",
+      "cases": [
+        {
+          "case": "unsupported_gap",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 0,
+          "pass": true
+        },
+        {
+          "case": "pose_jump",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 0,
+          "pass": true
+        },
+        {
+          "case": "painted_gap",
+          "expected_accepted_candidates": 0,
+          "actual_accepted_candidates": 0,
+          "pass": true
+        },
+        {
+          "case": "short_furniture_face",
+          "expected_wall_candidates": 0,
+          "actual_wall_candidates": 0,
+          "pass": true
+        },
+        {
+          "case": "two_rooms_one_door",
+          "expected_rooms": 2,
+          "actual_rooms": 2,
+          "expected_openings": 1,
+          "actual_openings": 1,
+          "pass": true
+        }
+      ],
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "drift_ablation_method": "geometry revision 2, same source capture and configuration; bounded ICP enabled/disabled",
+  "warnings": [
+    "Candidate count reductions do not establish improved physical accuracy or detector recall.",
+    "Area methods differ: previous polygon approximations versus current raster regions with exclusions.",
+    "Upper-plane selection changes ceiling candidates and requires physical verification.",
+    "No supplied opening proposal survives the stronger evidence gates; real doorways may remain undetected.",
+    "Geometry revision is encoded in IDs; old annotations must be explicitly rematched."
+  ]
+}

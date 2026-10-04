@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "roomscan"
+version = "0.1.0"
+description = "Local RGB-D room reconstruction and auditable measurement baseline"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+[tool.setuptools.packages.find]
+include = ["roomscan*"]
+[project.scripts]
+roomscan = "roomscan.cli:main"
+[tool.setuptools.package-data]
+roomscan = ["schema.json"]

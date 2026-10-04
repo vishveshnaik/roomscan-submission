@@ -1,0 +1,17 @@
+# Exact versions used in the recorded local run (Python 3.12, Apple Silicon).
+numpy==2.5.3
+Pillow==12.3.0
+scipy==1.18.1
+opencv-python-headless==5.0.0.93
+jsonschema==4.26.0
+attrs==26.1.0
+jsonschema-specifications==2025.9.1
+referencing==0.37.0
+rpds-py==2026.6.3
+typing-extensions==4.16.0
+scikit-image==0.26.0
+networkx==3.7
+imageio==2.38.0
+tifffile==2026.9.20
+lazy-loader==0.6
+packaging==26.3

@@ -1,0 +1,21 @@
+{
+  "evidence_type": "actual_iphone_walkthrough_processing",
+  "capture_description": "Landscape home walkthrough, reported by the recorder as slow movement at 1x",
+  "result_status": "partial_reconstruction",
+  "processing_mode": "metric_multiview",
+  "sampled_frames": 240,
+  "largest_connected_component_registered_frames": 24,
+  "disconnected_reconstruction_components": 24,
+  "candidate_local_regions": 1,
+  "complete_property_plan_demonstrated": false,
+  "metric_accuracy_independently_verified": false,
+  "ceiling_height_verified": false,
+  "ground_truth_measurements_available": false,
+  "limitations": [
+    "The largest component covers only 10 percent of sampled frames; this is frame registration coverage, not measured floor coverage.",
+    "Learned metric scale and candidate geometry are uncalibrated.",
+    "No physical accuracy gate has been demonstrated."
+  ],
+  "privacy": "Raw video, image frames, camera poses, point clouds, and home geometry are excluded from this package.",
+  "reproduction": "This is a sanitized run summary. The private capture is retained locally and is not bundled; this particular run cannot be independently reproduced from this ZIP alone."
+}

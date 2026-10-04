@@ -1,0 +1,298 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "measurement": {
+      "type": "object",
+      "required": [
+        "value",
+        "lower",
+        "upper",
+        "unit",
+        "confidence_level",
+        "interval_kind",
+        "method",
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "lower": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "upper": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "unit": {
+          "enum": [
+            "m",
+            "m2"
+          ]
+        },
+        "confidence_level": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "interval_kind": {
+          "enum": [
+            "unavailable",
+            "uncalibrated_error_budget"
+          ]
+        },
+        "method": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "required": [
+    "schema_version",
+    "capture_id",
+    "tier",
+    "status",
+    "rooms",
+    "adjacency",
+    "footprint_area",
+    "diagnostics",
+    "warnings",
+    "provenance",
+    "configuration",
+    "timing_seconds"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "capture_id": {
+      "type": "string"
+    },
+    "tier": {
+      "enum": [
+        "lidar",
+        "photos",
+        "video"
+      ]
+    },
+    "status": {
+      "enum": [
+        "needs_review",
+        "partial_reconstruction",
+        "unresolved"
+      ]
+    },
+    "rooms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "tier",
+          "polygon",
+          "coordinate_unit",
+          "floor_area",
+          "ceiling_height",
+          "walls",
+          "openings",
+          "damage_regions",
+          "concealed_damage_flags",
+          "scope_items",
+          "status",
+          "warnings"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "tier": {
+            "enum": [
+              "lidar",
+              "photos",
+              "video"
+            ]
+          },
+          "polygon": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "coordinate_unit": {
+            "enum": [
+              "m",
+              "unresolved"
+            ]
+          },
+          "floor_area": {
+            "$ref": "#/$defs/measurement"
+          },
+          "ceiling_height": {
+            "$ref": "#/$defs/measurement"
+          },
+          "walls": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "start",
+                "end",
+                "length",
+                "area",
+                "status"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "start": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "end": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "length": {
+                  "$ref": "#/$defs/measurement"
+                },
+                "area": {
+                  "$ref": "#/$defs/measurement"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "structural_evidence": {
+                  "type": "object"
+                },
+                "coverage_length": {
+                  "$ref": "#/$defs/measurement"
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "openings": {
+            "type": "array"
+          },
+          "damage_regions": {
+            "type": "array"
+          },
+          "concealed_damage_flags": {
+            "type": "array"
+          },
+          "scope_items": {
+            "type": "array"
+          },
+          "status": {
+            "type": "string"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "image_count": {
+            "type": "integer"
+          },
+          "reconstruction": {
+            "type": "object"
+          },
+          "surface_evidence": {
+            "type": "object"
+          },
+          "label_position": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "number"
+            }
+          },
+          "polygon_holes": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              }
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "adjacency": {
+      "type": "array"
+    },
+    "footprint_area": {
+      "$ref": "#/$defs/measurement"
+    },
+    "diagnostics": {
+      "type": "array"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "array"
+    },
+    "configuration": {
+      "type": "object"
+    },
+    "timing_seconds": {
+      "type": "number"
+    },
+    "structural_walls": {
+      "type": "array"
+    },
+    "opening_candidates": {
+      "type": "array"
+    },
+    "damage_candidates": {
+      "type": "array"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,36 @@
+{
+  "status": {
+    "before": "unresolved",
+    "after": "needs_review"
+  },
+  "rooms": {
+    "before": 0,
+    "after": 2
+  },
+  "footprint_area": {
+    "before": {
+      "value": null,
+      "lower": null,
+      "upper": null,
+      "unit": "m2",
+      "confidence_level": null,
+      "interval_kind": "unavailable",
+      "method": "unresolved",
+      "status": "unresolved"
+    },
+    "after": {
+      "value": 15.4888,
+      "lower": 10.2373,
+      "upper": 20.7403,
+      "unit": "m2",
+      "confidence_level": null,
+      "interval_kind": "uncalibrated_error_budget",
+      "method": "sum_of_floor_candidates",
+      "status": "candidate"
+    }
+  },
+  "timing_seconds": {
+    "before": 1.555,
+    "after": 1.514
+  }
+}
